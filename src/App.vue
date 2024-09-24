@@ -1,18 +1,17 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <header-component />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style scoped></style>
+<script setup>
+import { RouterView } from 'vue-router'
+import HeaderComponent from './components/HeaderComponent.vue'
+</script>
+
+<style scoped>
+main {
+  margin-top: 5rem;
+}
+</style>
