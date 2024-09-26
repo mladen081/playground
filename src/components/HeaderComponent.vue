@@ -42,6 +42,10 @@ header {
   font-weight: 300;
 }
 
+.router-link-exact-active {
+  color: #c21010;
+}
+
 @media (max-width: 1400px) {
   .tabs ul li a {
     font-size: 2rem;

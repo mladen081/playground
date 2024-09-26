@@ -6,10 +6,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
 p {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 3%;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
 }
 
 a {
@@ -18,12 +22,58 @@ a {
 }
 
 a:hover {
-  color: #555;
+  color: #c21010;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: left;
+}
+
+li {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+li::marker {
+  color: #c21010;
+}
+
+label,
+input {
+  font-size: 1.8rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+input:focus {
+  outline: 2px solid #c21010;
+  border-color: #c21010;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.5);
+  accent-color: #c21010;
+}
+
+fieldset {
+  padding: 5rem;
+}
+
+pre {
+  font-size: 1.8rem;
+  text-align: left;
+  text-wrap: wrap;
 }
 
 @media (max-width: 1600px) {
   h1 {
     font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -46,7 +96,13 @@ a:hover {
   h1 {
     font-size: 3.5rem;
   }
+  h2 {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
